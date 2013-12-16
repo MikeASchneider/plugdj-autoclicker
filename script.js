@@ -1,8 +1,8 @@
 var config = {
     waitTime : 60000,
-    text = {
+    text: {
         NONE : 'None'
-    };
+    }
 };
 
 setInterval(function() {
@@ -11,3 +11,4 @@ setInterval(function() {
   }
 }, config.waitTime);
 
+console.log("extension loaded!");

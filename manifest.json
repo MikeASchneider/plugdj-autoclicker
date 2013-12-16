@@ -10,5 +10,6 @@
 	],
 	"permissions": [
 		"tabs", "http://plug.dj/*", "https://plug.dj/*"
-	]
+	],
+	"web_accessible_resources": ["script.js"]
 }
