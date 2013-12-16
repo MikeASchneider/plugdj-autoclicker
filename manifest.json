@@ -5,11 +5,11 @@
 	"content_scripts": [
 		{
 			"matches": ["http://plug.dj/*", "https://plug.dj/*"],
-			"js": ["script.js"]
+			"js": ["jquery.js", "script.js"]
 		}
 	],
 	"permissions": [
 		"tabs", "http://plug.dj/*", "https://plug.dj/*"
 	],
-	"web_accessible_resources": ["script.js"]
+	"web_accessible_resources": ["jquery.js", "script.js"]
 }
