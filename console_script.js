@@ -1,11 +1,18 @@
 var config = {
     waitTime : 60000,
     on: true,
+    dj: true,
     text: {
-        NONE : 'None'
+        NONE : 'None',
+        CLICK_TO_DJ: 'Click to DJ'
     },
     interval : function(){
         console.log("Interval");
+        if(config.dj && $('#dj-button span').text() == config.text.CLICK_TO_DJ){
+            $('#dj-button').click();
+            console.log('Adding myself back to the waitlist');
+        }
+        
         if(config.on && // If bot is turned on
             API.getUser().username != API.getDJ().username && // The logged in user is not the current DJ
             !$('#meh').hasClass('selected') && // If 'meh' is not selected
